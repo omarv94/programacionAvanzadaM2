@@ -1,0 +1,36 @@
+###
+POST http://localhost:3000/Api/reservas HTTP/1.1
+Content-Type: application/json
+
+{
+    "type_huesped":"pareja",
+    "price":"4600",
+    "sale":9,
+    "dias":9
+    
+}
+###
+GET http://localhost:3000/Api/reservas/ HTTP/1.1
+Content-Type: application/json
+###
+GET http://localhost:3000/Api/reservas/5fa81d3381cc082680147ce0 HTTP/1.1
+Content-Type: application/json
+###
+PUT http://localhost:3000/Api/reservas/5fa88c99ce30de16786db687 HTTP/1.1
+Content-Type: application/json
+
+{
+    "type_huesped":"individual",
+    "price":4600,
+    "sale":5,
+    "dias":10,
+    "costo_dias":19000,
+    "pago_neto":25000,
+    "descuento":10000,
+    "pago_bruto":32000
+}
+
+    
+###
+DELETE http://localhost:3000/Api/reservas/5fa88c99ce30de16786db687 HTTP/1.1
+Content-Type: application/json

@@ -1,0 +1,17 @@
+{
+  "name": "momento2_miercoles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jhonatan",
+  "license": "ISC",
+  "dependencies": {
+    "cowsay": "^1.4.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.13"
+  }
+}
